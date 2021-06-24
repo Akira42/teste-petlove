@@ -1,0 +1,92 @@
+@media only screen and (min-width: 720px) {
+    body.desktop {
+        width: 65%;
+        margin: auto;
+    }
+}
+
+html {
+    background-color: rgb(247, 247, 247);
+}
+
+.conteudo {
+    padding-top: 70px;
+}
+
+/*bordas das seções*/
+.form-ctn, .result-show {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.form-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.result-show, .result-hide {
+    margin-top: 55px;
+    justify-content: left;
+    align-items: top;
+    padding: 35px;
+}
+
+.result-show p b, .result-show p span  {
+    color: #666;
+}
+
+/* keeps form result hidden until a search is made*/
+.result-hide {
+    display: none;
+}
+
+.form {
+    display: flex;
+}
+
+.btn {
+    background-color: #555;
+    color: #fff;
+    margin-left: 5px;
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+}
+
+.btn:focus, .btn:hover {
+    background-color: #333;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+
+.icon-search {
+    color:#000;
+    position:relative;
+    left:-30px;
+}
+
+#filtersubmit {
+    position: relative;
+    z-index: 1;
+    left: -150px;
+    top: 18px;
+    color: #7B7B7B;
+    cursor: pointer;
+    width: 0;
+}
+
+.linha {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+#erro {
+    text-align: center;
+    color: #de0024;
+    margin-top: -38px;
+}
