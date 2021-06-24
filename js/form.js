@@ -17,7 +17,7 @@ function buscaCEP() {
         document.getElementById("custom-consulta").classList.add('custom-consulta-hide');
     }
 
-    //variavel 
+    //variavel que armazena o link com o cep inserido
     var cepUrl = "https://viacep.com.br/ws/" + cepst + "/json/";
 
     //faz a request 
