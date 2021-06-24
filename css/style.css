@@ -1,48 +1,46 @@
 @media only screen and (min-width: 720px) {
-    body.desktop {
+    body.custom-desktop-size {
         width: 65%;
         margin: auto;
     }
 }
 
-html {
-    background-color: rgb(247, 247, 247);
+html, .custom-container {
+    background-color: #f7f7f7;
 }
 
-.conteudo {
-    padding-top: 70px;
+.custom-container {
+    margin-top: 70px;
 }
 
 /*bordas das seções*/
-.form-ctn, .result-show {
+.custom-form-ctn, .custom-consulta-show {
     border: 1px solid #ccc;
     background-color: #fff;
 }
 
-.form-ctn {
+.custom-form-ctn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
 }
 
-.result-show, .result-hide {
+.custom-consulta-show, .custom-consulta-hide {
     margin-top: 55px;
     justify-content: left;
-    align-items: top;
     padding: 35px;
 }
 
-.result-show p b, .result-show p span  {
+.custom-consulta-show p b, .custom-consulta-show p span  {
     color: #666;
 }
 
-/* keeps form result hidden until a search is made*/
-.result-hide {
+.custom-consulta-hide {
     display: none;
 }
 
-.form {
+.custom-form {
     display: flex;
 }
 
@@ -70,7 +68,7 @@ html {
     left:-30px;
 }
 
-#filtersubmit {
+.icon-lupa {
     position: relative;
     z-index: 1;
     left: -150px;
@@ -85,8 +83,12 @@ html {
     height: 0;
   }
 
-#erro {
+.custom-erro {
     text-align: center;
     color: #de0024;
     margin-top: -38px;
+}
+
+#custom-erro-icon {
+    display: none;
 }
